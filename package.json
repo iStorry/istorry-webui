@@ -23,7 +23,7 @@
     "./drawer": "./dist/components/ui/drawer.js",
     "./dropdown-menu": "./dist/components/ui/dropdown-menu.js",
     "./form": "./dist/components/ui/form.js",
-    "./icon": "./dist/components/ui/icon.js",
+    "./icons": "./dist/components/ui/icons.js",
     "./input": "./dist/components/ui/input.js",
     "./label": "./dist/components/ui/label.js",
     "./popover": "./dist/components/ui/popover.js",
