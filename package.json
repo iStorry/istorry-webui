@@ -34,8 +34,7 @@
     "./sonner": "./dist/components/ui/sonner.js",
     "./switch": "./dist/components/ui/switch.js",
     "./table": "./dist/components/ui/table.js",
-    "./textarea": "./dist/components/ui/textarea.js",
-    "./tooltip": "./dist/components/ui/tooltip.js"
+    "./textarea": "./dist/components/ui/textarea.js"
   },
   "scripts": {
     "build": "rimraf dist && tsup && tsc --declaration"
@@ -66,7 +65,6 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-switch": "^1.1.0",
-    "@radix-ui/react-tooltip": "^1.1.1",
     "@tailwindcss/typography": "^0.5.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
