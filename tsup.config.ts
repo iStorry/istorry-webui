@@ -8,7 +8,11 @@ export default defineConfig((options: Options) => ({
   splitting: true,
   target: "es2020",
   format: ["cjs", "esm"], // generate cjs and esm files
-  entry: ["./src/components/ui/**/*.{ts,tsx}", "./src/lib/**/*.{ts,tsx}"],
+  entry: [
+    "./src/components/ui/**/*.{ts,tsx}",
+    // "./src/components/editor/**/*.{ts,tsx}",
+    "./src/lib/**/*.{ts,tsx}",
+  ],
   skipNodeModulesBundle: true, // Skips building dependencies for node modules
   minify: !options.watch && env === "production",
   bundle: false,
