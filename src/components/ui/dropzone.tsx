@@ -3,11 +3,11 @@ import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
 interface DropzoneProps extends React.HTMLAttributes<HTMLDivElement> {
-  message: string;
   onFileDrop: (files: File[]) => void;
+  children: React.ReactNode;
 }
 
-export function Dropzone({ onFileDrop, className, message }: DropzoneProps) {
+export function Dropzone({ onFileDrop, className, children }: DropzoneProps) {
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
       // Do something with the files
@@ -35,7 +35,7 @@ export function Dropzone({ onFileDrop, className, message }: DropzoneProps) {
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <p className="text-center text-sm text-muted-foreground">{message}</p>
+      {children}
     </div>
   );
 }
