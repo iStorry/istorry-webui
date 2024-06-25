@@ -1,8 +1,21 @@
 {
   "name": "@istorry/webui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "UI for webui",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./lib/utils": "./dist/lib/utils.js",
+    "./button": "./dist/components/ui/button.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsup && tsc --emitDeclarationOnly --declaration"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@istorry"
   },
@@ -22,7 +35,9 @@
     "lucide-react": "^0.396.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rimraf": "^5.0.7",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tsup": "^8.1.0"
   }
 }
