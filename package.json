@@ -1,6 +1,7 @@
 {
   "name": "@istorry/webui",
-  "module": "src/main.ts",
+  "version": "0.0.1",
+  "description": "UI for webui",
   "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@istorry"
