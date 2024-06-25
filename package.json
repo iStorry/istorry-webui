@@ -14,7 +14,7 @@
     "./button": "./dist/components/ui/button.js"
   },
   "scripts": {
-    "build": "rimraf dist && tsup && tsc --emitDeclarationOnly --declaration"
+    "build": "rimraf dist && tsup && tsc --declaration"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@istorry"

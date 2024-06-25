@@ -6,13 +6,11 @@ import path from "path";
 export default defineConfig((options: Options) => ({
   treeshake: true,
   splitting: true,
-  // target: 'es2020',
+  target: "es2020",
   format: ["cjs", "esm"], // generate cjs and esm files
   entry: [
     "./src/components/ui/!(index).ts?(x)",
     "./src/lib/!(index).ts?(x)",
-    // "./lib/!(index).ts?(x)",
-    // "./src/components/!(index).ts?(x)",
     // "!./**/*.spec.*",
     // "!./**/*.stories.*",
   ],
