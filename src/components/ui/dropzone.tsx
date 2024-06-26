@@ -20,6 +20,7 @@ export function Dropzone({ onFileDrop, className, children }: DropzoneProps) {
     accept: {
       "image/*": [],
     },
+    multiple: false,
     onDrop,
   });
 
