@@ -36,6 +36,7 @@ import {
   ChevronRight,
   ChevronLeft,
   Upload,
+  CalendarIcon,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -56,6 +57,7 @@ export const Icons = {
   chevronRight: ChevronRight,
   chevronLeft: ChevronLeft,
   checkSquare: CheckSquare,
+  calendar: CalendarIcon,
   code: Code,
   heading1: Heading1,
   heading2: Heading2,
