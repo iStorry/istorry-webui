@@ -38,11 +38,11 @@ export const WobbleCard = ({
         WebkitFontSmoothing: "subpixel-antialiased",
       }}
       className={cn(
-        "mx-auto w-full relative rounded-2xl overflow-hidden",
+        "mx-auto w-full relative overflow-hidden",
         containerClassName
       )}
     >
-      <div className="relative h-full sm:mx-0 sm:rounded-2xl overflow-hidden">
+      <div className="relative h-full sm:mx-0 overflow-hidden">
         <motion.div
           style={{
             transform: isHovering
