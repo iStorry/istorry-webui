@@ -1,6 +1,6 @@
 {
   "name": "@istorry/webui",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "UI for webui",
   "type": "module",
   "main": "dist/index.js",

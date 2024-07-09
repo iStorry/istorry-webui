@@ -37,6 +37,8 @@ import {
   ChevronLeft,
   Upload,
   CalendarIcon,
+  LogOut,
+  LogIn,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -78,6 +80,8 @@ export const Icons = {
   underline: Underline,
   strikethrough: Strikethrough,
   upload: Upload,
+  logout: LogOut,
+  login: LogIn,
   smallworld: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
