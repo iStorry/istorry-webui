@@ -1,6 +1,6 @@
 {
   "name": "@istorry/webui",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "UI for webui",
   "type": "module",
   "main": "dist/index.js",
@@ -19,6 +19,7 @@
     "./button": "./dist/components/ui/button.js",
     "./calendar": "./dist/components/ui/calendar.js",
     "./card": "./dist/components/ui/card.js",
+    "./chart": "./dist/components/ui/chart.js",
     "./checkbox": "./dist/components/ui/checkbox.js",
     "./dialog": "./dist/components/ui/dialog.js",
     "./drawer": "./dist/components/ui/drawer.js",
@@ -86,6 +87,7 @@
     "react-dom": "^18.3.1",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.52.0",
+    "recharts": "^2.12.7",
     "rimraf": "^5.0.7",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.3.0",
