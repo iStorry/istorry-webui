@@ -1,6 +1,6 @@
 {
   "name": "@istorry/webui",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "UI for webui",
   "type": "module",
   "main": "dist/index.js",
@@ -30,6 +30,7 @@
     "./icons": "./dist/components/ui/icons.js",
     "./input": "./dist/components/ui/input.js",
     "./label": "./dist/components/ui/label.js",
+    "./navigation-menu": "./dist/components/ui/navigation-menu.js",
     "./password-input": "./dist/components/ui/password-input.js",
     "./popover": "./dist/components/ui/popover.js",
     "./radio-group": "./dist/components/ui/radio-group.js",
@@ -68,6 +69,7 @@
     "@radix-ui/react-hover-card": "^1.1.1",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-popover": "^1.1.1",
     "@radix-ui/react-radio-group": "^1.2.0",
     "@radix-ui/react-scroll-area": "^1.1.0",
