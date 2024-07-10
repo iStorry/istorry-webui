@@ -39,6 +39,12 @@ import {
   CalendarIcon,
   LogOut,
   LogIn,
+  TrendingDown,
+  File,
+  Files,
+  TrendingUp,
+  Users,
+  Activity,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -82,6 +88,14 @@ export const Icons = {
   upload: Upload,
   logout: LogOut,
   login: LogIn,
+  trendingDown: TrendingDown,
+  trendingUp: TrendingUp,
+  users: Users,
+  eye: Eye,
+  file: File,
+  files: Files,
+  activity: Activity,
+
   smallworld: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
