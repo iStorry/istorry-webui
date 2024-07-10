@@ -45,6 +45,7 @@ import {
   TrendingUp,
   Users,
   Activity,
+  Clock,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -95,6 +96,7 @@ export const Icons = {
   file: File,
   files: Files,
   activity: Activity,
+  clock: Clock,
 
   smallworld: (props: LucideProps) => (
     <svg
