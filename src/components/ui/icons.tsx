@@ -97,7 +97,6 @@ export const Icons = {
   files: Files,
   activity: Activity,
   clock: Clock,
-
   smallworld: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

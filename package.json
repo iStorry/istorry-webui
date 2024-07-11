@@ -1,6 +1,6 @@
 {
   "name": "@istorry/webui",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "UI for webui",
   "type": "module",
   "main": "dist/index.js",
@@ -21,6 +21,7 @@
     "./card": "./dist/components/ui/card.js",
     "./chart": "./dist/components/ui/chart.js",
     "./checkbox": "./dist/components/ui/checkbox.js",
+    "./command": "./dist/components/ui/command.js",
     "./dialog": "./dist/components/ui/dialog.js",
     "./drawer": "./dist/components/ui/drawer.js",
     "./dropdown-menu": "./dist/components/ui/dropdown-menu.js",
@@ -81,6 +82,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.2.12",
     "lucide-react": "^0.396.0",
