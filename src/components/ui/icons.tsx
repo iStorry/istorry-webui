@@ -46,6 +46,9 @@ import {
   Users,
   Activity,
   Clock,
+  Moon,
+  Sun,
+  Bell,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -97,6 +100,9 @@ export const Icons = {
   files: Files,
   activity: Activity,
   clock: Clock,
+  moon: Moon,
+  sun: Sun,
+  bell: Bell,
   smallworld: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
