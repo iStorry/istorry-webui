@@ -1,6 +1,6 @@
 {
   "name": "@istorry/webui",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "UI for webui",
   "type": "module",
   "main": "dist/index.js",
@@ -24,7 +24,6 @@
     "./checkbox": "./dist/components/ui/checkbox.js",
     "./command": "./dist/components/ui/command.js",
     "./dialog": "./dist/components/ui/dialog.js",
-    "./drawer": "./dist/components/ui/drawer.js",
     "./dropdown-menu": "./dist/components/ui/dropdown-menu.js",
     "./dropzone": "./dist/components/ui/dropzone.js",
     "./form": "./dist/components/ui/form.js",
@@ -57,7 +56,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/react": "^18.3.6"
+    "@types/react": "^18.3.8"
   },
   "peerDependencies": {
     "typescript": "^5.5.3"
@@ -87,7 +86,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^11.5.5",
     "lucide-react": "^0.396.0",
     "react": "^18.3.1",
     "react-aria": "^3.34.3",
@@ -100,10 +99,9 @@
     "rimraf": "^6.0.1",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss": "^3.4.11",
+    "tailwindcss": "^3.4.12",
     "tailwindcss-animate": "^1.0.7",
-    "tsup": "^8.2.4",
-    "vaul": "^0.9.3",
+    "tsup": "^8.3.0",
     "zod": "^3.23.8"
   }
 }
