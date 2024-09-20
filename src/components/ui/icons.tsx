@@ -49,6 +49,11 @@ import {
   Moon,
   Sun,
   Bell,
+  RefreshCcw,
+  RefreshCw,
+  X,
+  SlidersHorizontal,
+  TriangleAlert,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -103,6 +108,11 @@ export const Icons = {
   moon: Moon,
   sun: Sun,
   bell: Bell,
+  refresh: RefreshCw,
+  refreshCcw: RefreshCcw,
+  x: X,
+  slidersHorizontal:  SlidersHorizontal,
+  triangleAlert: TriangleAlert,
   smallworld: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

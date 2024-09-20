@@ -10,6 +10,7 @@ export default defineConfig((options: Options) => ({
   format: ["cjs", "esm"], // generate cjs and esm files
   entry: [
     "./src/components/ui/**/*.{ts,tsx}",
+    "./src/components/date-picker/**/*.{ts,tsx}",
     // "./src/components/editor/**/*.{ts,tsx}",
     "./src/lib/**/*.{ts,tsx}",
   ],
