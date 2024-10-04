@@ -5,27 +5,25 @@ const env = process.env.NODE_ENV;
 
 export default defineConfig((options: Options) => ({
   treeshake: true,
-  splitting: true,
+  splitting: false, // Disable code splitting for a lighter bundle
   target: "es2020",
-  format: ["cjs", "esm"], // generate cjs and esm files
+  format: ["esm"], // Only generate esm files for React
   entry: [
     "./src/components/ui/**/*.{ts,tsx}",
     "./src/components/date-picker/**/*.{ts,tsx}",
-    // "./src/components/editor/**/*.{ts,tsx}",
     "./src/lib/**/*.{ts,tsx}",
   ],
-  skipNodeModulesBundle: true, // Skips building dependencies for node modules
+  skipNodeModulesBundle: true,
   minify: !options.watch && env === "production",
-  bundle: false,
-  clean: true, // clean up the dist folder
-  dts: true, // generate dts file for main module
-  sourcemap: env === "production", // source map is only available in prod
+  bundle: true, // Enable bundling for a single, lighter output
+  clean: true,
+  dts: true,
+  sourcemap: false, // Disable sourcemaps to reduce bundle size
   outDir: "dist",
   tsconfig: path.resolve(__dirname, "./tsconfig.json"),
   esbuildOptions(options, context) {
     options.outbase = "src";
   },
-  external: ["react"],
+  external: ["react", "react-dom"], // Externalize React dependencies
   ...options,
-  // button: { js: '"use client";' },
 }));
