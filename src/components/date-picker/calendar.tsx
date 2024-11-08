@@ -8,7 +8,6 @@ import {
   getWeeksInMonth,
   type CalendarDate,
 } from "@internationalized/date";
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import {
   useButton,
   useCalendar,
@@ -21,6 +20,7 @@ import {
 import { useCalendarState, type CalendarState } from "react-stately";
 import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
+import { ChevronRightIcon, ChevronLeftIcon } from '@radix-ui/react-icons';
 
 function Calendar(props: CalendarProps<DateValue>) {
   const prevButtonRef = React.useRef<HTMLButtonElement | null>(null);
