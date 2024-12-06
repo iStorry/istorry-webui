@@ -17,24 +17,29 @@ import { Calendar } from "./calendar";
 import { cn } from "../../lib/utils";
 import { CalendarIcon } from '@radix-ui/react-icons';
 
+interface DateTimePickerProps extends DatePickerStateOptions<DateValue> {
+  id?: string; 
+}
+
 const DateTimePicker = React.forwardRef<
   HTMLDivElement,
-  DatePickerStateOptions<DateValue>
+  DateTimePickerProps
 >((props, forwardedRef) => {
+  const { id, ...datePickerProps } = props;  // Destructure and separate the id
   const ref = useForwardedRef(forwardedRef);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   const [open, setOpen] = useState(false);
 
-  const state = useDatePickerState(props);
+  const state = useDatePickerState(datePickerProps);
   const {
     groupProps,
     fieldProps,
     buttonProps: _buttonProps,
     dialogProps,
     calendarProps,
-  } = useDatePicker(props, state, ref);
+  } = useDatePicker(datePickerProps, state, ref);
   const { buttonProps } = useButton(_buttonProps, buttonRef);
   useInteractOutside({
     ref: contentRef,
@@ -53,7 +58,7 @@ const DateTimePicker = React.forwardRef<
           "flex items-center rounded-md ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
         )}
       >
-        <DateField {...fieldProps} />
+        <DateField {...fieldProps} id={id} />
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
             <Button

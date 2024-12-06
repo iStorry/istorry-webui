@@ -27,6 +27,7 @@ function DateField(props: AriaDatePickerProps<DateValue>) {
   const dateSegments = state.segments.slice(0, 5);
   return (
     <div
+    
       {...fieldProps}
       ref={ref}
       className={cn(
