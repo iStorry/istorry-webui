@@ -43,9 +43,7 @@
     "./switch": "./dist/components/ui/switch.js",
     "./table": "./dist/components/ui/table.js",
     "./textarea": "./dist/components/ui/textarea.js",
-    "./tooltip": "./dist/components/ui/tooltip.js",
-    "./tracing-beam": "./dist/components/ui/tracing-beam.js",
-    "./wobble-card": "./dist/components/ui/wobble-card.js"
+    "./tooltip": "./dist/components/ui/tooltip.js"
   },
   "scripts": {
     "build": "rimraf dist && tsup && tsc --declaration"
@@ -56,13 +54,13 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/react": "^19.0.0",
+    "typescript": "^5.7.2",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5"
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "^5.7.2"
+    "react-dom": "^19.0.0"
   },
   "resolutions": {
     "react": "^19.0.0",
